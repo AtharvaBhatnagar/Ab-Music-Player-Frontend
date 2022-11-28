@@ -1,0 +1,480 @@
+body{
+  pad: 0;
+  margin: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+/* nav bar code */
+.fas
+{
+  color: white;
+}
+#search-user
+{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline; 
+  /* this align items base line is VVIP it saves us from aligning individual items setting margin VVIP remove this and see whats the effect */
+  background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+animation: nav-animation 3s ease-in-out 1;
+
+}
+@keyframes nav-animation {
+  from
+  {
+      width: 0vw;
+      
+  }
+  to
+  {
+      width: 100vw;
+  }
+  
+}
+#app-icon
+{
+  animation: app-icon 4s ease-in-out 1;
+
+}
+@keyframes app-icon
+{
+  from
+  {
+     scale: 1;
+  }
+  to
+  {
+      scale: 1.5;
+  }
+}
+nav div
+{
+  margin: 1vw;
+}
+img
+{
+  height: 4vw;
+  width: 6vw;
+}
+nav img
+{
+
+margin-left: 2vw;
+}
+#search-icon
+{
+  margin-left:23vw;
+}
+#search-bar
+{
+  
+  width: 17vw;
+}
+#bell-icon
+{
+  margin-left: 4vw;
+  font-size: 1.7vw;
+}
+#bell-icon:hover
+{
+  color: lightblue;
+}
+#h1
+{
+  margin-left: 1vw;
+}
+#fav
+{
+  margin-left: 8vw;
+  font-size: 1.4vw;
+  transition: 1s ease-in-out;
+  font-size:2vw;
+
+}
+#fav:hover
+{
+  transform: translateX(7vw);
+  color: black;
+}
+.music-palyer-icon
+{
+  border-radius: 50%;
+  margin-top: 1vw;
+}
+#user-image:hover
+{
+  scale: 1.5;
+}
+.fa-microphone:hover
+{
+  color: grey;
+}
+#nh1
+{
+  transition: 2s ease-in-out ;
+}
+#nh1:hover
+{
+  transform: rotate(360deg);
+  color: black;
+}
+
+
+#content-division
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* queue */
+#Queue
+{
+    display: flex;
+    flex-direction: column;
+    /* border: white solid 2px; */
+    width: 30%;
+    height: 77vh;
+    margin-top: 17vh;
+}
+
+.queue-images
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.queue-images img
+{
+    margin-top: 5vh;
+    height:11vh;
+    width: 5vw;
+    border-radius: 10%;
+}
+#Queue h1
+{
+    margin-left: 1vw;
+}
+.fa-heart
+{
+    font-size: 1.5vw;
+}
+.fa-heart:hover
+{
+    color: red;
+}
+#queue-text
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#queue-text div
+{
+    margin-left: 11vw;
+    font-size: 1.5vw;
+}
+#queue-text form
+{
+    margin-left: 1vw;
+  
+}
+#drop-down
+{
+    height: 2vh;
+    width: 2vw;
+}
+#drop-down form select
+{
+    align-items: center;
+    color: gold;
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+   width: 7vw;
+    height: 3vw;
+    
+}
+
+/* main content */
+#main-content
+{
+    display: flex;
+    flex-direction: column;
+    /* border: white solid 2px; */
+    width: 70%;
+    height: 100vh;
+}
+#main-content-header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    margin-top: 17vh;
+
+}
+#main-content-header img
+{
+    width: 15vw;
+    height: 37vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    transition: 0.8s ease;
+}
+#main-content-header img:hover
+{
+ 
+    transform: scale(1.4);
+}
+#entire-main-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* latest release */
+#latest-release
+{
+    font-display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    background-color: #f7b42c;
+background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+margin-top: 16vh;
+
+}
+#latest-release h2
+{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+#latest-release img
+{
+    width: 15vw;
+    height: 27vh;
+    margin-left: 14vw;
+    margin-bottom: 1vh;
+}
+
+/* popluar atist css */
+#popular-artist
+{
+    margin-top: 4rem;
+    justify-content: center;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+#popular-artist img
+{
+    width: 8vw;
+    height: 18vh;
+    border-radius: 50%;
+    margin-left: 3rem;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+}
+#popular-artist h2
+{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+
+#stations
+{
+    background-color: #f7b42c;
+background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1vh;
+    width: 85vw;
+    justify-content: center;
+    align-items: baseline;
+}
+#station-heading
+{
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+
+.station-images{
+    color: white;
+    font-size: 2vw;
+    width: 18vw;
+    height: 19vh;
+    border-radius: 10%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-position: center; 
+    /* vvip see the background position property helps in centrering the background image */
+ 
+}
+#station h2
+{
+    display: block;
+}
+#station-icon
+{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.6fxV6ah78CaA3lFVry-hRQHaHa&pid=Api&P=0&w=167&h=167");
+    
+    position: relative;
+    top: 7.5vh;
+   margin-right: 0;
+   
+}
+#love
+{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.TW5nSuL3eR5xkUQv0x0YNgHaEK&pid=Api&P=0&w=312&h=175");
+   
+}
+#retro
+{
+    background-image: url("https://www.fbcoverlover.com/maker/covers-images/download/Vinyl1-Facebook-Cover-fbCoverLover_com.jpg");
+}
+#workout
+{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.n6WPpji2uq8DRvvZVG_OpgHaHT&pid=Api&P=0&w=177&h=174");
+}
+#pop
+{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.LkNk4COnp0uPXu_C59R14wHaFb&pid=Api&P=0&w=223&h=163");
+}
+#chill
+{
+    background-image: url("https://data.whicdn.com/images/334904207/original.jpg?t=1567656893");
+}
+#rock
+{
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.TsI0idYT-eh4QbJKChCJewHaEo&pid=Api&P=0&w=266&h=166");
+}
+
+/* categories */
+#categories
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    width: 85vw;
+    margin-top: 1vh;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+.categories-images
+{
+    color: white;
+    font-size: 2vw;
+    width: 22vw;
+    height: 23vh;
+    border-radius: 10%;
+    margin-left: 2.5vw;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    margin-bottom: 4vh;
+    margin-right: 2vw;
+    transition: 1s linear;
+}
+.categories-images:hover 
+{
+scale:1.3;
+}
+#categories-heading
+{
+    margin-top: 10vh;
+    margin-left: 2vw;
+}
+#party
+{
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.9WC3sx6I4_k4Zp2GWq7s_wHaE7&pid=Api&P=0&w=271&h=180");
+}
+#electronic
+{
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.33zliPaXeQDxsQ8Uf__oxAHaFe&pid=Api&P=0&w=230&h=170");
+}
+#roadtrip
+{
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.uxi2hbgGsbjQnQa-GW5KewFUC3&pid=Api&P=0&w=345&h=185");
+}
+
+
+/* latest english */
+#latest-english 
+{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+.latest-english-images img
+{ 
+    width: 10vw;
+    height: 26vh;
+    border-radius: 10%;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+/* latest hindi */
+#latesthindi
+{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+.latest-hindi-images img
+{
+    width: 10vw;
+    height: 26vh;
+    border-radius: 10%;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    border-radius: 10%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+#h-hindi,#h-english
+{
+    margin-left: 2vw;
+    margin-top: 10vh;
+}
+.play
+{
+    transition: 2s ease-in-out;
+}
+.play:hover
+{
+    background-image: url("http://www.pngall.com/wp-content/uploads/5/Play-Button-PNG-Picture.png");
+}
